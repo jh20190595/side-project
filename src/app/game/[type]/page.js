@@ -6,7 +6,7 @@ import styles from './page.module.css';
 import { use } from 'react';
 
 export function generateMetadata({ params }) {
-  const { type } = use(params);
+  const { type } = params;
 
   const titleMap = {
     food: '옛날 음식 가격 맞추기',

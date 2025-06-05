@@ -5,7 +5,6 @@ import clothData from '@/lib/clothData';
 import foodData from '@/lib/foodData';
 import Image from 'next/image';
 import styles from './GamePlay.module.css';
-import { setDefaultHighWaterMark } from 'stream';
 import ResultPage from '@/component/Result';
 import RankAndSave from '@/lib/RankAndSave';
 
@@ -69,11 +68,6 @@ export default function Gameplay({ type, priceoption }) {
 
     }, [isActive, isCorrect])
 
-    function handleKeyDown(e) {
-        if (e.key === 'Enter') {
-            handleSubmit();
-        }
-    }
 
     function handleSubmit(answer) {
         setIsActive(true)

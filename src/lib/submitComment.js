@@ -4,7 +4,7 @@ import sha256 from 'crypto-js/sha256';
 const submitComment = async ({ nickname, password, content, type }) => {
     const passwordHash = sha256(password).toString();
 
-    const { data, error } = await supabase
+    const {  error } = await supabase
         .from('comments')
         .insert([
             {

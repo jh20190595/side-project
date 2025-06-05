@@ -2,7 +2,6 @@
 
 import styles from './Result.module.css';
 import GaugeChart from './GaugeChart';
-import Image from 'next/image';
 import Link from 'next/link';
 import CommentSection from '@/component/Comment';
 
