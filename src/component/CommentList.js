@@ -34,7 +34,7 @@ export default function CommentList({ currentComment , type }) {
 
     fetchComment();
 
-  }, [currentComment])
+  }, [currentComment,type])
 
   const handleDelete = async (commentid) => {
     const inputHash = sha256(checkPassword).toString();
