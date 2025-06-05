@@ -2,7 +2,6 @@ import clothData from '@/lib/clothData';
 import Link from 'next/link';
 import Image from 'next/image';
 import styles from '@/component/GameCloth.module.css'
-import Comment from '@/component/Comment'
 
 export default function GameCloth() {
 
