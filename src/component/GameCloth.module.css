@@ -1,0 +1,34 @@
+.quizcontainer {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.quizimagewrap{
+    display: flex;
+    justify-content: center;
+}
+
+.quiztextwrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding : 2rem 2rem;
+    line-height: 50px;
+}
+
+.typebtnwrap{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap : 50px;
+}
+
+.typebtnwrap button {
+    border : 0;
+    cursor: pointer;
+    background-color: #5275FF;
+    color : #fff;
+    font-size : 14px;
+    font-weight: 500;
+    padding : 0.825rem 2rem;
+}
