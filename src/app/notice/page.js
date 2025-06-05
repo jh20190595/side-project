@@ -14,7 +14,7 @@ export default function NoticePage() {
                 <h2>📢 공지사항 </h2>
             </div>
             <ul className={styles.NoticeWrap}>
-                <li className={styles.NoticeItem}>'howmuch'는 당신의 가격 감각을 테스트하는 웹사이트입니다.</li>
+                <li className={styles.NoticeItem}>&apos;howmuch&apos;는 당신의 가격 감각을 테스트하는 웹사이트입니다.</li>
 
                 <li className={styles.NoticeItem} onClick={ () => setIsActive(prev => !prev)}><strong>앞으로 추가될 예정이에요!</strong>
                 { IsActive && (

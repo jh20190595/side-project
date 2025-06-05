@@ -2,7 +2,7 @@
 import { use } from 'react';
 import Gameplay from '@/component/GamePlay';
 
-export default function play({params}) {
+export default function Play({params}) {
 
     const { type } = use(params);
 

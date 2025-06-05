@@ -10,7 +10,6 @@ import CommentDelete from '@/component/CommentDelete';
 export default function CommentList({ currentComment , type }) {
 
   const [comments, setComments] = useState([]);
-  const [showPasswordInput, setShowPasswordInput] = useState(false);
   const [checkPassword, setCheckPassWord] = useState('');
   const [targetCommentId, setTargetCommentId] = useState(null);
 
@@ -46,6 +45,12 @@ export default function CommentList({ currentComment , type }) {
       .eq('id', commentid)
       .single();
 
+    if(error) {
+      alert('댓글 정보를 불러오는데 실패했습니다.');
+      console.error(error);
+      return;
+    }
+    
     if (data?.password_hash === inputHash) {
       await supabase
         .from('comments')
@@ -55,7 +60,6 @@ export default function CommentList({ currentComment , type }) {
       setComments(prev => prev.filter(comment => comment.id !== commentid));
 
       setCheckPassWord('');
-      setShowPasswordInput(false);
       alert('댓글이 삭제되었습니다.');
     } else {
       alert('비밀번호가 일치하지 않습니다.');
@@ -89,8 +93,8 @@ export default function CommentList({ currentComment , type }) {
             });
 
             return (
-              <div className={styles.CommentWrap}>
-                <li key={comment.id} className={styles.Comment}>
+              <div key={comment.id}className={styles.CommentWrap}>
+                <li lassName={styles.Comment}>
                   <strong>{comment.writer_name}</strong>    <span style={{ fontSize: '12px', color: '#888' }}>{createdAt}</span>
                   <br />
                   {comment.content}

@@ -52,7 +52,7 @@ export default function Gameplay({ type, priceoption }) {
 
         setQuiz(shuffle);
 
-    }, [])
+    }, [type])
 
     useEffect(() => {
         const handleNextKeyDown = (e) => {
