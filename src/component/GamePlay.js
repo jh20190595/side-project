@@ -12,7 +12,6 @@ import RankAndSave from '@/lib/RankAndSave';
 export default function Gameplay({ type, priceoption }) {
 
     const [isCorrect, setIsCorrect] = useState(0);
-    const [answerCheck, setAnswerCheck] = useState(false);
     const [isIndex, setIsIndex] = useState(0);
     const [isActive, setIsActive] = useState(false);
     const [quiz, setQuiz] = useState([]);

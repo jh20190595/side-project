@@ -1,7 +1,6 @@
 import Link from "next/link"
 import clothData from "@/lib/clothData"
 import Image from "next/image"
-import clothImage from '@/component/clothImage';
 
 export default function MainPage() {
 
