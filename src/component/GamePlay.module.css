@@ -33,8 +33,8 @@
 
 .priceshow {
     position: absolute;
-    top: -100;
-    left: 250;
+    top: -100px;
+    left: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
