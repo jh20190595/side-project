@@ -19,7 +19,7 @@ export default function NoticePage() {
                 <li className={styles.NoticeItem} onClick={ () => setIsActive(prev => !prev)}><strong>앞으로 추가될 예정이에요!</strong>
                 { IsActive && (
                     <ul>
-                        <li className={styles.NoticeSubItem}>- 연도별 퀴즈 모음 (예: 1980년대, 2000년대)</li>
+                        <li className={styles.NoticeSubItem}>- 과자 맞추기 </li>
                         <li className={styles.NoticeSubItem}>- 지역별/브랜드별 가격 비교 퀴즈</li>
                     </ul>
                 )}

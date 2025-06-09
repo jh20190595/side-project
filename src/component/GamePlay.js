@@ -106,6 +106,7 @@ export default function Gameplay({ type, priceoption }) {
                                 alt='logo'
                                 width={300}
                                 height={300}
+                                priority = {isCorrect === 0 }
                             />
                         )}
                     </div>
