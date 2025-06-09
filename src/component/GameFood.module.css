@@ -18,6 +18,14 @@
     line-height: 50px;
 }
 
+.quiztextwrap h1{
+    color : black;
+}
+
+.quiztextwrap p{ 
+    color : black;
+}
+
 .typebtncontainer {
     display: flex;
     justify-content: center;

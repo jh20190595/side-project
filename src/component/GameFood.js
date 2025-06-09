@@ -16,7 +16,7 @@ export default function GameFood() {
             </div>
 
             <div className={styles.quiztextwrap}>
-                <h1 style={{ fontSize: '24px' }}>가격 감각 테스트</h1>
+                <h1 style={{ fontSize: '24px', color : 'black' }}>가격 감각 테스트</h1>
                 <p style={{ fontSize: '16px' }}>사진을 보고 가격을 맞춰보세요</p>
                 <p style={{ fontSize: '11px' }}>*가격은 출시가를 기준으로 출제됩니다.</p>
             </div>

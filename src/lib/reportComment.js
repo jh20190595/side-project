@@ -16,7 +16,7 @@ const reportComment = async (commentId) => {
 
     const currentCount = reportData?.report_count || 0;
 
-    const {   error: updateError } = await supabase
+    const { data: updateData, error: updateError } = await supabase
         .from('comments')
         .update({ 'report_count': currentCount + 1 })
         .eq('id', commentId);
