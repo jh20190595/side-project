@@ -25,7 +25,7 @@ export default function MainPage() {
           </div>
         </Link>
 
-        <Link href="/game/snackfood">
+        <Link href="/game/snack">
           <div className="quizbox-wrap">
             <div className="img-fixed-box">
               <Image src="https://sitem.ssgcdn.com/84/69/96/item/1000641966984_i1_290.jpg" alt="image" width={200} height={200} />

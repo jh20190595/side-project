@@ -11,6 +11,8 @@ export default function ResultPage({ type , mypercentile, correctCount }) {
 
     if( type ==='food') {
         GameType = 'food'
+    } else if( type ==='snack') {
+        GameType = 'snack';
     } else {
         GameType = 'cloth';
     }

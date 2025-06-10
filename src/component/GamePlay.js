@@ -21,8 +21,10 @@ export default function Gameplay({ type, priceoption }) {
 
     let GameType = '';
 
-    if(type ==='food') {
-        GameType = 'food'
+    if (type === 'food') {
+        GameType = 'food';
+    } else if (type === 'snack') {
+        GameType = 'snack';
     } else {
         GameType = 'cloth';
     }
@@ -80,6 +82,8 @@ export default function Gameplay({ type, priceoption }) {
     const handleNextQuiz = async () => {
         if (locked) return;
 
+        setLocked(true);
+
         if (isCorrect === 14) {
             const myaccuracy = (correctCount / quiz.length) * 100;
             const totalpercentile = await RankAndSave(myaccuracy);
@@ -106,7 +110,7 @@ export default function Gameplay({ type, priceoption }) {
                                 alt='logo'
                                 width={300}
                                 height={300}
-                                priority = {isCorrect === 0 }
+                                priority={isCorrect === 0}
                             />
                         )}
                     </div>
@@ -144,7 +148,7 @@ export default function Gameplay({ type, priceoption }) {
                 </>
             ) : (
                 <div>
-                    <ResultPage  type = {GameType} mypercentile={mypercentile} correctCount={correctCount} />
+                    <ResultPage type={GameType} mypercentile={mypercentile} correctCount={correctCount} />
 
                 </div>
             )}

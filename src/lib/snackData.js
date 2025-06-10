@@ -1,0 +1,25 @@
+const snackData = [
+  { id: 1, answer: '감자깡', ImageUrl: '/과자사진/감자깡.jpg' },
+  { id: 2, answer: '몽쉘', ImageUrl: '/과자사진/몽쉘.jpg' },
+  { id: 3, answer: '바나나킥', ImageUrl: '/과자사진/바나나킥.jpg' },
+  { id: 4, answer: '빈츠', ImageUrl: '/과자사진/빈츠.jpg' },
+  { id: 5, answer: '뻥이요', ImageUrl: '/과자사진/뻥이요.jpg' },
+  { id: 6, answer: '새우깡', ImageUrl: '/과자사진/새우깡.jpg' },
+  { id: 7, answer: '스윙칩', ImageUrl: '/과자사진/스윙칩.jpg' },
+  { id: 8, answer: '썬칩', ImageUrl: '/과자사진/썬칩.jpg' },
+  { id: 9, answer: '알새우칩', ImageUrl: '/과자사진/알새우칩.jpg' },
+  { id: 10, answer: '양파링', ImageUrl: '/과자사진/양파링.jpg' },
+  { id: 11, answer: '에이스', ImageUrl: '/과자사진/에이스.jpg' },
+  { id: 12, answer: '오징어집', ImageUrl: '/과자사진/오징어집.jpg' },
+  { id: 13, answer: '초코파이', ImageUrl: '/과자사진/초코파이.jpg' },
+  { id: 14, answer: '카스타드', ImageUrl: '/과자사진/카스타드.jpg' },
+  { id: 15, answer: '콘칩', ImageUrl: '/과자사진/콘칩.jpg' },
+  { id: 16, answer: '콘푸로스트', ImageUrl: '/과자사진/콘푸로스트.jpg' },
+  { id: 17, answer: '포스틱', ImageUrl: '/과자사진/포스틱.jpg' },
+  { id: 18, answer: '포카칩', ImageUrl: '/과자사진/포카칩.jpg' },
+  { id: 19, answer: '포테토칩', ImageUrl: '/과자사진/포테토칩.jpg' },
+  { id: 20, answer: '프링글스', ImageUrl: '/과자사진/프링글스.jpg' },
+  { id: 21, answer: '후레쉬베리', ImageUrl: '/과자사진/후레쉬베리.jpg' },
+];
+
+export default snackData;

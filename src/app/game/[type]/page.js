@@ -41,7 +41,7 @@ export default function GamePage({ params }) {
   const gameMap = {
     cloth: GameCloth,
     food: GameFood,
-    snackfood : GameSnack,
+    snack : GameSnack,
   };
 
   const GameComponent = gameMap[type];

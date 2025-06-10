@@ -1,0 +1,95 @@
+.MainContainer {
+    max-width: 1080px;
+    margin: 0 auto;
+    color: red;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.PlayImageWrap {
+    position: relative;
+    margin-top: 30px;
+}
+
+
+.PlayImage {
+    object-fit: cover;
+}
+
+.blurOverlay1 {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 240px;
+    background-color: rgba(123, 73, 53, 1.0);
+    backdrop-filter: blur(12px);
+}
+
+.blurOverlay2 {
+    position: absolute;
+    z-index: 2;
+    top: 260px;
+    left: 0;
+    width: 500px;
+    height: 240px;
+    background-color: rgba(123, 73, 53, 1.0);
+    backdrop-filter: blur(10px);
+}
+
+
+.UserInputContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.UserInput {
+    outline: none;
+    padding: 12px 24px;
+    background-color: #fff;
+    color: black;
+    border-radius: 4px;
+    width: 480px;
+}
+
+.UserInputbtn {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.AnswerCheckForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 30px;
+}
+
+.AnswerCheck {
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.nextbtn {
+    background-color: #444444;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
