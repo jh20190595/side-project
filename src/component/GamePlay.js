@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useCallback } from 'react';
 import clothData from '@/lib/clothData';
 import foodData from '@/lib/foodData';
 import Image from 'next/image';
@@ -79,7 +79,7 @@ export default function Gameplay({ type, priceoption }) {
         setIsIndex(answer)
     }
 
-    const handleNextQuiz = async () => {
+    const handleNextQuiz = useCallback(async () => {
         if (locked) return;
 
         setLocked(true);
@@ -96,7 +96,7 @@ export default function Gameplay({ type, priceoption }) {
         }
 
         setTimeout(() => setLocked(false), 300);
-    }
+    }, [locked, isCorrect, correctCount , quiz.length] )
 
     return (
 
