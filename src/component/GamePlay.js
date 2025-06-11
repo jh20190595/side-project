@@ -68,7 +68,7 @@ export default function Gameplay({ type, priceoption }) {
             window.removeEventListener('keydown', handleNextKeyDown)
         }
 
-    }, [isActive, isCorrect])
+    }, [isActive, isCorrect, handleNextQuiz])
 
 
     function handleSubmit(answer) {
