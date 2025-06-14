@@ -106,7 +106,6 @@ export default function GameSnackPlay() {
                                     alt='logo'
                                     width={500}
                                     height={500}
-                                    priority={isCorrect === 0}
                                 />
                                 {!isActive && (
                                     <>
@@ -124,6 +123,7 @@ export default function GameSnackPlay() {
                                 className={styles.UserInput}
                                 type='text'
                                 value={userInput}
+                                autoFocus
                                 onChange={e => setUserInput(e.target.value)}
                                 onKeyDown={(e) => {
                                     if (e.key === 'Enter') {
