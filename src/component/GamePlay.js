@@ -55,6 +55,25 @@ export default function Gameplay({ type, priceoption }) {
 
     }, [type])
 
+    const handleNextQuiz = useCallback(async () => {
+        if (locked) return;
+
+        setLocked(true);
+
+        if (isCorrect === 14) {
+            const myaccuracy = (correctCount / quiz.length) * 100;
+            const totalpercentile = await RankAndSave(myaccuracy);
+            setMyPercentile(totalpercentile);
+            setResult(true);
+
+        } else {
+            setIsCorrect(prev => prev + 1);
+            setIsActive(false)
+        }
+
+        setTimeout(() => setLocked(false), 300);
+    }, [locked, isCorrect, correctCount , quiz.length] )
+    
     useEffect(() => {
         const handleNextKeyDown = (e) => {
             if (e.key === 'Enter' && isActive) {
@@ -79,24 +98,6 @@ export default function Gameplay({ type, priceoption }) {
         setIsIndex(answer)
     }
 
-    const handleNextQuiz = useCallback(async () => {
-        if (locked) return;
-
-        setLocked(true);
-
-        if (isCorrect === 14) {
-            const myaccuracy = (correctCount / quiz.length) * 100;
-            const totalpercentile = await RankAndSave(myaccuracy);
-            setMyPercentile(totalpercentile);
-            setResult(true);
-
-        } else {
-            setIsCorrect(prev => prev + 1);
-            setIsActive(false)
-        }
-
-        setTimeout(() => setLocked(false), 300);
-    }, [locked, isCorrect, correctCount , quiz.length] )
 
     return (
 
