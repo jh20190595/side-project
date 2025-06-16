@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 export const metadata = {
   title : '가격 맞추기 퀴즈',
-  decription : '금전 감각 테스트',
+  description : '금전 감각 테스트',
   other : {
     'google-site-verification' : 'I1t5Ha8W3oSgUN13s0D-j9oE1IHWTB5-vPD4dTq_n3A'
   },
