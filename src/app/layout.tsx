@@ -6,9 +6,6 @@ import Adsense from '@/component/Adsense';
 export const metadata = {
   title: '가격 맞추기 퀴즈',
   description: '금전 감각 테스트',
-  other: {
-    'google-site-verification': 'I1t5Ha8W3oSgUN13s0D-j9oE1IHWTB5-vPD4dTq_n3A'
-  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
@@ -17,6 +14,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html>
       <head>
+        <meta name="google-site-verification" content="I1t5Ha8W3oSgUN13s0D-j9oE1IHWTB5-vPD4dTq_n3A" />
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6716098438139577"
