@@ -8,7 +8,6 @@ export async function GET() {
     'https://howmuch-test.vercel.app/play/top',
     'https://howmuch-test.vercel.app/play/bottom',
     'https://howmuch-test.vercel.app/play/cloth',
-    'https://howmuch-test.vercel.app/play/snack',
     'https://howmuch-test.vercel.app/play/guess/snack'
   ];
 
