@@ -1,7 +1,6 @@
 import './globals.css';
 import Image from 'next/image';
 import Link from 'next/link';
-import Adsense from '@/component/Adsense';
 
 export const metadata = {
   title: '가격 맞추기 퀴즈',
@@ -14,12 +13,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html>
       <head>
-        <meta name="google-site-verification" content="I1t5Ha8W3oSgUN13s0D-j9oE1IHWTB5-vPD4dTq_n3A" />
-        <script
-          async
+        <script 
+          async 
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6716098438139577"
-          crossOrigin="anonymous"
-        ></script>
+          crossOrigin="anonymous"></script>
       </head>
       <body>
         <header>
@@ -44,16 +41,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </header>
-
-        <div className='ad-left'>
-          <Adsense />
-        </div>
-
-        <div className='ad-right'>
-          <Adsense />
-        </div>
         {children}
-
       </body>
     </html >
   )
