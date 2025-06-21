@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+"howmuch"
+
+옷, 과자, 음식 가격을 맞히는 퀴즈 사이트
 
 ## Getting Started
 
