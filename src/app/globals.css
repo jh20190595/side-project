@@ -68,13 +68,16 @@ body {
 
 .main-container {
   max-width: 1080px;
-  margin: 150px auto;
+  margin: 80px auto;
 }
 
 .quiz-list {
+  max-width: 1080px;
+  padding: 8px 16px;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  gap: 30px;
+  gap: 60px;
 }
 
 .quizbox-wrap {

@@ -34,6 +34,14 @@ export default function MainPage() {
           </div>
         </Link>
 
+        <Link href="/">
+          <div className="quizbox-wrap">
+            <div className="img-fixed-box">
+              <Image src="" alt="image" width={200} height={200} />
+            </div>
+            <p>추가 예정</p>
+          </div>
+        </Link>
       </div >
     </div >
   );
