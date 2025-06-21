@@ -55,6 +55,14 @@ export default function Gameplay({ type, priceoption }) {
 
     }, [type])
 
+    function handleSubmit(answer) {
+        setIsActive(true)
+        if (answer === quiz[isCorrect].answer) {
+            setCorrectCount(prev => prev + 1);
+        }
+        setIsIndex(answer)
+    }
+
     const handleNextQuiz = useCallback(async () => {
         if (locked) return;
 
@@ -72,8 +80,8 @@ export default function Gameplay({ type, priceoption }) {
         }
 
         setTimeout(() => setLocked(false), 300);
-    }, [locked, isCorrect, correctCount , quiz.length] )
-    
+    }, [locked, isCorrect, correctCount, quiz.length])
+
     useEffect(() => {
         const handleNextKeyDown = (e) => {
             if (e.key === 'Enter' && isActive) {
@@ -90,15 +98,18 @@ export default function Gameplay({ type, priceoption }) {
     }, [isActive, isCorrect, handleNextQuiz])
 
 
-    function handleSubmit(answer) {
-        setIsActive(true)
-        if (answer === quiz[isCorrect].answer) {
-            setCorrectCount(prev => prev + 1);
+    useEffect(() => {
+        const preloadImage = () => {
+            const nextquiz = quiz[isCorrect + 1];
+            if (nextquiz) {
+                const img = new window.Image();
+                img.src = nextquiz.ImageUrl;
+            }
         }
-        setIsIndex(answer)
-    }
 
-
+        preloadImage();
+    }, [isCorrect, quiz])
+    
     return (
 
         <div className={styles.playcontainer}>
@@ -111,6 +122,7 @@ export default function Gameplay({ type, priceoption }) {
                                 alt='logo'
                                 width={300}
                                 height={300}
+                                priority={isCorrect === 0}
                             />
                         )}
                     </div>

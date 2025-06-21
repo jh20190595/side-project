@@ -3,6 +3,11 @@
 import { useState } from 'react';
 import styles from './page.module.css';
 
+export const metadata = {
+    title : 'howmuch - 공지사항',
+    description : '공지사항 설명'
+}
+
 export default function NoticePage() {
 
     const [IsActive, setIsActive ] = useState(false);

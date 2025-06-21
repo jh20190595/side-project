@@ -42,6 +42,17 @@ export default function GameSnackPlay() {
 
     }, [])
 
+    useEffect( () => {
+        const preloadImage = () => {
+            const nextquiz = quiz[isCorrect+1];
+            if(nextquiz) {
+                const img = new Image();
+                img.src = nextquiz.ImageUrl;
+            }
+        }
+        preloadImage();
+    }, [isCorrect, quiz])
+
     const handleSubmit = useCallback(() => {
         if (locked || userInput.trim() === '') return;
 
