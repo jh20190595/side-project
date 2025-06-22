@@ -7,14 +7,16 @@ export const metadata = {
   description: '금전 감각 테스트',
 }
 
+
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
 
 
   return (
     <html>
       <head>
-        <script 
-          async 
+        <script
+          async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6716098438139577"
           crossOrigin="anonymous"></script>
       </head>
@@ -41,7 +43,9 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </div>
           </div>
         </header>
+        
         {children}
+        
       </body>
     </html >
   )

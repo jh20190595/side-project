@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useEffect, useCallback } from 'react';
+import { useState, useEffect, useCallback, useMemo } from 'react';
 import clothData from '@/lib/clothData';
 import foodData from '@/lib/foodData';
 import Image from 'next/image';
@@ -19,15 +19,9 @@ export default function Gameplay({ type, priceoption }) {
     const [correctCount, setCorrectCount] = useState(0);
     const [mypercentile, setMyPercentile] = useState(0);
 
-    let GameType = '';
-
-    if (type === 'food') {
-        GameType = 'food';
-    } else if (type === 'snack') {
-        GameType = 'snack';
-    } else {
-        GameType = 'cloth';
-    }
+    const GameType = useMemo(() => {
+        return type === 'food' ? 'food' : type === 'snack' ? 'snack' : 'cloth';
+    }, [type])
 
     function shuffleArray(arr) {
 
