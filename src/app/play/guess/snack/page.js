@@ -104,69 +104,68 @@ export default function GameSnackPlay() {
         preloadImage();
     }, [isCorrect, quiz])
 
+    if (result) {
+        return <ResultPage type={GameType} mypercentile={mypercentile} correctCount={correctCount} />
+    }
+
     return (
         <div className={styles.MainContainer}>
-            {!result ? (
-                <>
-                    <div className={styles.PlayImageWrap}>
-                        {quiz[isCorrect] && (
+            <div className={styles.PlayImageWrap}>
+                {quiz[isCorrect] && (
+                    <>
+                        {quiz[isCorrect]?.ImageUrl ? (
+                            <Image
+                                className={styles.PlayImage}
+                                src={quiz[isCorrect].ImageUrl}
+                                alt='logo'
+                                width={500}
+                                height={500}
+                                priority
+                            />
+                        ) : null}
+                        {!isActive && (
                             <>
-                                <Image
-                                    className={styles.PlayImage}
-                                    src={quiz[isCorrect].ImageUrl}
-                                    alt='logo'
-                                    width={500}
-                                    height={500}
-                                />
-                                {!isActive && (
-                                    <>
-                                        <div className={styles.blurOverlay1}></div>
-                                        <div className={styles.blurOverlay2}></div>
-                                    </>
-                                )}
+                                <div className={styles.blurOverlay1}></div>
+                                <div className={styles.blurOverlay2}></div>
                             </>
                         )}
-                    </div>
+                    </>
+                )}
+            </div>
 
-                    {!isActive ? (
-                        <div className={styles.UserInputContainer}>
-                            <input
-                                className={styles.UserInput}
-                                type='text'
-                                value={userInput}
-                                autoFocus
-                                onChange={e => setUserInput(e.target.value)}
-                                onKeyDown={(e) => {
-                                    if (e.key === 'Enter') {
-                                        if (!isActive) {
-                                            handleSubmit();
-                                        } else {
-                                            handleNextQuiz();
-                                        }
-                                    }
-                                }}
-                            />
+            {!isActive ? (
+                <div className={styles.UserInputContainer}>
+                    <input
+                        className={styles.UserInput}
+                        type='text'
+                        value={userInput}
+                        autoFocus
+                        onChange={e => setUserInput(e.target.value)}
+                        onKeyDown={(e) => {
+                            if (e.key === 'Enter') {
+                                if (!isActive) {
+                                    handleSubmit();
+                                } else {
+                                    handleNextQuiz();
+                                }
+                            }
+                        }}
+                    />
 
-                            <button className={styles.UserInputbtn} onClick={handleSubmit}>
-                                제출
-                            </button>
-                        </div>
-                    ) : (
-                        <div className={styles.AnswerCheckForm}>
-                            <div className={styles.AnswerCheck}>{answerResult}</div>
-                            <p style={{ fontSize: '22px', fontWeight: '500' }}>{quiz[isCorrect].answer}</p>
-                            <button
-                                className={styles.nextbtn}
-                                onClick={() => handleNextQuiz()}
-                            >
-                                다음
-                            </button>
-                        </div>
-                    )}
-                </>
+                    <button className={styles.UserInputbtn} onClick={handleSubmit}>
+                        제출
+                    </button>
+                </div>
             ) : (
-                <div>
-                    <ResultPage type={GameType} mypercentile={mypercentile} correctCount={correctCount} />
+                <div className={styles.AnswerCheckForm}>
+                    <div className={styles.AnswerCheck}>{answerResult}</div>
+                    <p style={{ fontSize: '22px', fontWeight: '500' }}>{quiz[isCorrect].answer}</p>
+                    <button
+                        className={styles.nextbtn}
+                        onClick={() => handleNextQuiz()}
+                    >
+                        다음
+                    </button>
                 </div>
             )}
         </div >
