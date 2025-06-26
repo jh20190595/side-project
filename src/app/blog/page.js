@@ -3,6 +3,8 @@ export const metadata = {
   description: '일상 속 가격 변화와 소비 트렌드에 대한 정보',
 };
 
+import Link from 'next/link';
+
 export default function BlogPage() {
   return (
     <div style={{ maxWidth: '720px', margin: '0 auto', padding: '2rem' }}>
@@ -62,8 +64,8 @@ export default function BlogPage() {
       <h2 style={{ marginTop: '2rem' }}>🎯 퀴즈로 확인해보세요!</h2>
       <p>정확한 가격 감각, 과연 여러분은 갖추고 계신가요?</p>
       <ul>
-        <li><a href="/play/guess/snack">과자 가격 맞추기 퀴즈</a></li>
-        <li><a href="/play/guess/clothes">의류 가격 맞추기 퀴즈</a></li>
+        <li><Link href="/play/guess/snack">과자 가격 맞추기 퀴즈</Link></li>
+        <li><Link href="/play/guess/clothes">의류 가격 맞추기 퀴즈</Link></li>
       </ul>
 
       <p style={{ marginTop: '3rem', fontStyle: 'italic' }}>

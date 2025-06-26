@@ -10,7 +10,7 @@ export default function PolicyPage() {
 
       <div className={styles.policyContentContainer}>
         <p className={styles.policyParagraph}>
-          본 사이트(이하 "howmuch")는 사용자의 개인정보를 소중히 여기며, 『개인정보 보호법』을 준수합니다.
+          본 사이트(이하 &quot;howmuch&quot;)는 사용자의 개인정보를 소중히 여기며, 『개인정보 보호법』을 준수합니다.
           본 방침은 howmuch에서 제공하는 퀴즈, 댓글, 광고 서비스와 관련하여 수집되는 개인정보의 처리 방침을 안내합니다.
         </p>
 
