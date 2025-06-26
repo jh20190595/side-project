@@ -71,7 +71,7 @@ export default function BlogPage() {
       <p style={{ marginTop: '3rem', fontStyle: 'italic' }}>
         howmuch 블로그는 일상 속 가격 변화, 소비 트렌드, 재미있는 경제 감각을 퀴즈와 함께 제공합니다.
         <br />
-        더 많은 이야기를 알고 싶다면 <a href="/">홈으로 돌아가기</a>.
+        더 많은 이야기를 알고 싶다면 <Link href="/">홈으로 돌아가기</Link>.
       </p>
     </div>
   );
