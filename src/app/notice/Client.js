@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import styles from './page.module.css';
+import Link from 'next/link';
 
 export default function NoticeClient() {
 
@@ -23,6 +24,12 @@ export default function NoticeClient() {
                         <li className={styles.NoticeSubItem}>- 지역별/브랜드별 가격 비교 퀴즈</li>
                     </ul>
                 )}
+                </li>
+
+                <li className={styles.NoticeItem}>
+                    <Link href='/policy' className={styles.NoticeLink}>
+                        개인정보처리방침 (2025.06.20)
+                    </Link>
                 </li>
             </ul>
         </div>

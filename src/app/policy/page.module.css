@@ -1,0 +1,32 @@
+.policyContainer {
+  max-width: 1080px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem 1rem;
+  color: #000000;
+}
+
+.policyTitle {
+  background-color: #F2F2F2;
+  padding: 1rem 1rem;
+}
+
+.policyContentContainer {
+  background-color: #F2F2F2;
+  padding: 1rem 1rem;
+  margin-top : 30px;
+}
+
+.policyHeading {
+  margin : 20px 0;
+  font-weight: bold;
+  font-size : 1.1rem;
+}
+
+.policyList {
+  list-style-type: square;
+  padding-left : 20px;
+}
+.policyList li {
+  margin-bottom: 8px;
+}
