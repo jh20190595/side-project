@@ -10,7 +10,7 @@ export default function GameCloth() {
             <div className={styles.quizimagewrap}>
                 <Image
                     src={clothData[0].ImageUrl}
-                    alt='logo'
+                    alt='의류 사진'
                     width={300}
                     height={200}
                 />

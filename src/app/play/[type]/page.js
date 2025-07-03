@@ -2,6 +2,12 @@
 import { use } from 'react';
 import Gameplay from '@/component/GamePlay';
 
+export const metadata = { 
+  title: 'howmuch 게임 플레이',
+  description: '다양한 유형의 퀴즈 풀기!'
+};
+
+
 export default function Play({params}) {
 
     const { type } = use(params);

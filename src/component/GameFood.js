@@ -9,7 +9,7 @@ export default function GameFood() {
             <div className={styles.quizimagewrap}>
                 <Image
                     src='/th.jpg'
-                    alt='logo'
+                    alt='음식 사진'
                     width={300}
                     height={200}
                 />

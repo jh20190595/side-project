@@ -3,6 +3,7 @@ import Comment from '@/component/Comment';
 import GameCloth from '@/component/GameCloth';
 import GameFood from '@/component/GameFood';
 import GameSnack from '@/component/GameSnack';
+import GameCharactor from '@/component/GameCharactor';
 import styles from './page.module.css';
 import { use } from 'react';
 
@@ -42,6 +43,7 @@ export default function GamePage({ params }) {
     cloth: GameCloth,
     food: GameFood,
     snack : GameSnack,
+    charactor : GameCharactor,
   };
 
   const GameComponent = gameMap[type];

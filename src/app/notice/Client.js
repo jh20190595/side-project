@@ -21,7 +21,7 @@ export default function NoticeClient() {
                 { IsActive && (
                     <ul>
                         <li className={styles.NoticeSubItem}>- 과자 맞추기 </li>
-                        <li className={styles.NoticeSubItem}>- 지역별/브랜드별 가격 비교 퀴즈</li>
+                        <li className={styles.NoticeSubItem}>- 다양한 퀴즈 유형 ex. 인물퀴즈</li>
                     </ul>
                 )}
                 </li>

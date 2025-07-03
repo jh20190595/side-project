@@ -8,23 +8,24 @@ export default function GameSnack() {
         <div className={styles.quizcontainer}>
             <div className={styles.quizimagewrap}>
                 <Image
-                    src="https://sitem.ssgcdn.com/84/69/96/item/1000641966984_i1_290.jpg"
-                    alt='과자 이미지'
+                    src="/인물사진/손흥민.jpg"
+                    alt='인물 사진'
                     width={300}
                     height={200}
                 />
             </div>
 
             <div className={styles.quiztextwrap}>
-                <h1 style={{ fontSize: '24px', color : 'black' }}>과자 맞추기</h1>
-                <p style={{ fontSize: '16px' }}>가려진 사진을 보고 어떤 과자인지 맞추기</p>
-                <p style={{ fontSize: '11px' }}>* 사진 출처 : ssg.com</p>
+                <h1 style={{ fontSize: '24px', color: 'black' }}>인물 퀴즈</h1>
+                <p style={{ fontSize: '16px' }}>사진을 보고 3초 안에 인물을 맞춰보세요</p>
+                <p style={{ fontSize: '16px' }}>* 활동명을 기준으로 제출됩니다.</p>
+                <p style={{ fontSize: '11px' }}>* 빠름 주의</p>
             </div>
             <div className={styles.typebtncontainer}>
-                <Link href="/play/guess/snack">
+                <Link href="/play/guess/charactor">
                     <button>문제 풀기</button>
-                </Link>  
+                </Link>
             </div>
         </div>
-            )
+    )
 }

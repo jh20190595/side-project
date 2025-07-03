@@ -34,12 +34,12 @@ export default function MainPage() {
           </div>
         </Link>
 
-        <Link href="/">
+        <Link href="/game/charactor">
           <div className="quizbox-wrap">
             <div className="img-fixed-box">
-              <Image src="" alt="image" width={200} height={200} />
+              <Image src="/인물사진/손흥민.jpg" alt="image" width={200} height={200} />
             </div>
-            <p>추가 예정</p>
+            <p>인물 퀴즈</p>
           </div>
         </Link>
       </div >
