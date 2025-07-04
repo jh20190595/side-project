@@ -2,29 +2,28 @@
 
 export async function GET() {
   const urls = [
-    'https://howmuch-test.vercel.app/',
-    'https://howmuch-test.vercel.app/notice',
-    'https://howmuch-test.vercel.app/policy',
-    'https://howmuch-test.vercel.app/blog',
-    'https://howmuch-test.vercel.app/about',
-    'https://howmuch-test.vercel.app/contact',
-    'https://howmuch-test.vercel.app/game/cloth',
-    'https://howmuch-test.vercel.app/game/snack',
-    'https://howmuch-test.vercel.app/game/food',
-    'https://howmuch-test.vercel.app/game/charactor',
-    'https://howmuch-test.vercel.app/play/top',
-    'https://howmuch-test.vercel.app/play/bottom',
-    'https://howmuch-test.vercel.app/play/cloth',
-    'https://howmuch-test.vercel.app/play/food',
-    'https://howmuch-test.vercel.app/play/guess/snack',
-    'https://howmuch-test.vercel.app/play/guess/charactor'
+    'https://howmuchh.vercel.app/',
+    'https://howmuchh.vercel.app/notice',
+    'https://howmuchh.vercel.app/policy',
+    'https://howmuchh.vercel.app/about',
+    'https://howmuchh.vercel.app/contact',
+    'https://howmuchh.vercel.app/blog',
+    'https://howmuchh.vercel.app/play/guess/snack',
+    'https://howmuchh.vercel.app/play/guess/charactor',
+    'https://howmuchh.vercel.app/play/top',
+    'https://howmuchh.vercel.app/play/bottom',
+    'https://howmuchh.vercel.app/play/cloth',
+    'https://howmuchh.vercel.app/play/food',
+    'https://howmuchh.vercel.app/game/cloth',
+    'https://howmuchh.vercel.app/game/food',
+    'https://howmuchh.vercel.app/game/snack',
+    'https://howmuchh.vercel.app/game/charactor'
   ];
-
   const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   ${urls
-    .map(
-      (url) => `
+      .map(
+        (url) => `
   <url>
     <loc>${url}</loc>
     <lastmod>${new Date().toISOString()}</lastmod>
@@ -32,8 +31,8 @@ export async function GET() {
     <priority>0.7</priority>
   </url>
   `
-    )
-    .join('\n')}
+      )
+      .join('\n')}
 </urlset>`.trim();
 
   return new Response(xml, {
