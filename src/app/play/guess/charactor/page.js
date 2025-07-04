@@ -42,6 +42,7 @@ export default function GameSnackPlay() {
     }
 
     useEffect(() => {
+        setCorrectCount(0);
         const filtered = chractorData;
         const shuffle = shuffleArray(filtered).slice(0,10);
         setQuiz(shuffle);
@@ -140,8 +141,8 @@ export default function GameSnackPlay() {
                                     className={styles.PlayImage}
                                     src={quiz[index].ImageUrl}
                                     alt='logo'
-                                    width={500}
-                                    height={500}
+                                    width={600}
+                                    height={600}
                                     priority
                                     objectFit='cover'
                                 />

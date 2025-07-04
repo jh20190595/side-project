@@ -7,7 +7,7 @@ Sitemap: https://howmuch-test.vercel.app/sitemap.xml
 
   return new Response(content, {
     headers: {
-      'Content-Type': 'text/plain', 
+      'Content-Type': 'text/plain',
     },
   });
 }
