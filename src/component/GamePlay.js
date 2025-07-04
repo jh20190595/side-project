@@ -37,7 +37,7 @@ export default function Gameplay({ type, priceoption }) {
     useEffect(() => {
 
         let filtered = [];
-
+        setCorrectCount(0);
         if (type === 'food') {
             filtered = foodData.filter(item => item.type === type);
         } else {

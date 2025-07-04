@@ -35,6 +35,7 @@ export default function GameSnackPlay() {
 
     useEffect(() => {
 
+        setCorrectCount(0);
         const filtered = snackData;
         const shuffle = shuffleArray(filtered);
 
