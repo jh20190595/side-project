@@ -31,9 +31,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6716098438139577"
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6716098438139577"
           crossOrigin="anonymous"></script>
       </head>
       <body>
@@ -43,13 +41,13 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <div className='nav-logo'>
                 <Link href='/'>
 
-                    <Image
-                      className='logoImage'
-                      src="/아맞다로고.png"
-                      alt='로고'
-                      width={100}
-                      height={30}
-                    />
+                  <Image
+                    className='logoImage'
+                    src="/아맞다로고.png"
+                    alt='로고'
+                    width={100}
+                    height={30}
+                  />
                 </Link>
               </div>
               <div className='nav-signup-container'>
