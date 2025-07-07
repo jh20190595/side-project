@@ -132,7 +132,8 @@ export default function GameSnackPlay() {
                 {quiz[index] && (
                     <>
                         <div className={styles.timeBarWrap}>
-                            <div className={styles.timeBar} style={{ width: `${widthPct}%` }} />
+                            <div className={styles.timeBar} style={{ width: `${widthPct}%`,
+                                                                    backgroundColor : `${count >= 2 ? "#f43f5e" : count >= 1 ? "#facc15" : "#fef08a" }` }} />
                         </div>
                         {quiz[index]?.ImageUrl ? (
                             <div className={styles.ImageWrap}>
@@ -141,8 +142,8 @@ export default function GameSnackPlay() {
                                     className={styles.PlayImage}
                                     src={quiz[index].ImageUrl}
                                     alt='logo'
-                                    width={600}
-                                    height={600}
+                                    width={400}
+                                    height={500}
                                     priority
                                     objectFit='cover'
                                 />

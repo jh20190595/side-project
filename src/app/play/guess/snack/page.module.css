@@ -14,11 +14,16 @@
     margin-top: 30px;
 }
 
-
 .PlayImage {
-    object-fit: cover;
+  object-fit: cover;
+  filter: blur(20px);
+  transition: filter 0.2s ease;
 }
 
+.PlayImage.show {
+  filter: none; 
+}
+/*
 .blurOverlay1 {
     position: absolute;
     z-index: 2;
@@ -40,6 +45,7 @@
     background-color: rgba(123, 73, 53, 1.0);
     backdrop-filter: blur(10px);
 }
+    */
 
 
 .UserInputContainer {

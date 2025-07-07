@@ -116,7 +116,7 @@ export default function GameSnackPlay() {
                     <>
                         {quiz[isCorrect]?.ImageUrl ? (
                             <Image
-                                className={styles.PlayImage}
+                                className={`${styles.PlayImage} ${isActive ? styles.show : ''}`}
                                 src={quiz[isCorrect].ImageUrl}
                                 alt='logo'
                                 width={500}

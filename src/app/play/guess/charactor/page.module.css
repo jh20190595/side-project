@@ -20,7 +20,7 @@
 }
 
 .timeBarWrap {
-  width: 500px;
+  width: 400px;
   height: 18px;
   background: #eee;
   border-radius: 7px;
@@ -29,12 +29,12 @@
 
 .timeBar {
   height: 100%;
-  background: yellow;
-  transition: width 0.03s linear;
+   transition: width 0.1s ease, background-color 0.3s ease;
 }
 
 .ImageWrap {
-    width: 500px;
+    margin : 0 auto;
+    width: 400px;
     height: 500px;
     overflow: hidden;
 }

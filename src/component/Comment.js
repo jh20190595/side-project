@@ -59,7 +59,7 @@ export default function Comment({ type }) {
                         <textarea
                             value={comment}
                             onChange={e => setComment(e.target.value)}
-                            placeholder='이 가격 어떻게 생각하세요?'
+                            placeholder='댓글'
                             maxLength='125'
                             className={styles.commentBoard}
                         />
