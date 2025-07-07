@@ -8,7 +8,7 @@ export default function GameSnack() {
         <div className={styles.quizcontainer}>
             <div className={styles.quizimagewrap}>
                 <Image
-                    src="/인물사진/손흥민.jpg"
+                    src="/인물사진/손흥민1.jpg"
                     alt='인물 사진'
                     width={300}
                     height={200}
