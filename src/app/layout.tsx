@@ -8,11 +8,11 @@ export const metadata = {
   openGraph: {
     title: '아맞다 - 퀴즈 웹사이트',
     description: '다양한 퀴즈로 나의 감각을 테스트하고 친구들과 공유해보세요!',
-    url: 'https://howmuchh.vercel.app',
+    url: 'https://amatda.vercel.app',
     siteName: '아맞다',
     images: [
       {
-        url: 'https://howmuchh.vercel.app/아맞다로고.png',
+        url: 'https://amatda.vercel.app/amatdaLogo.png',
         width: 800,
         height: 400,
         alt: '아맞다 대표 이미지',
@@ -43,7 +43,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
                   <Image
                     className='logoImage'
-                    src="/아맞다로고.png"
+                    src="/amatdaLogo.png"
                     alt='로고'
                     width={100}
                     height={30}
