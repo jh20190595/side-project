@@ -38,7 +38,7 @@ export function generateMetadata({ params }) {
       title: titleMap[type],
       description: descMap[type],
       images: [imageMap[type] || '/옛날제품사진/너구리.jpg'],
-      url : 'https://howmuchh.vercel.app',
+      url : 'https://amatda.vercel.app',
       type : 'website',
     },
   };
