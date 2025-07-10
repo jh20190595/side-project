@@ -10,6 +10,9 @@ export const metadata = {
     description: '다양한 퀴즈로 나의 감각을 테스트하고 친구들과 공유해보세요!',
     url: 'https://amatda.vercel.app',
     siteName: '아맞다',
+    icons : {
+      icon : '아맞다파비콘.png'
+    },
     images: [
       {
         url: 'https://amatda.vercel.app/amatdaLogo.png',
@@ -31,6 +34,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="ko">
       <head>
+        <link rel="icon" href="/아맞다파비콘.png"/>
         <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6716098438139577"
           crossOrigin="anonymous"></script>
       </head>
