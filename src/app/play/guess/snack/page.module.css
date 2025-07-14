@@ -17,7 +17,7 @@
 .PlayImage {
   object-fit: cover;
   filter: blur(20px);
-  transition: filter 0.2s ease;
+
 }
 
 .PlayImage.show {

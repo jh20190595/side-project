@@ -124,12 +124,6 @@ export default function GameSnackPlay() {
                                 height={500}
                             />
                         ) : null}
-                        {!isActive && (
-                            <>
-                                <div className={styles.blurOverlay1}></div>
-                                <div className={styles.blurOverlay2}></div>
-                            </>
-                        )}
                     </>
                 )}
             </div>
