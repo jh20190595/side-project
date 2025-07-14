@@ -96,10 +96,12 @@ export default function GameSnackPlay() {
 
     useEffect(() => {
         const preloadImage = () => {
-            const nextquiz = quiz[isCorrect + 1];
-            if (nextquiz) {
-                const img = new window.Image();
-                img.src = nextquiz.ImageUrl;
+            for (let i = 1; i <= 3; i++) {
+                const nextquiz = quiz[isCorrect + 1];
+                if (nextquiz) {
+                    const img = new window.Image();
+                    img.src = nextquiz.ImageUrl;
+                }
             }
         }
         preloadImage();

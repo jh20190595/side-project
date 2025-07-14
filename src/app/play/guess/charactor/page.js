@@ -44,7 +44,7 @@ export default function GameSnackPlay() {
     useEffect(() => {
         setCorrectCount(0);
         const filtered = chractorData;
-        const shuffle = shuffleArray(filtered).slice(0,10);
+        const shuffle = shuffleArray(filtered).slice(0, 10);
         setQuiz(shuffle);
     }, [])
 
@@ -111,10 +111,13 @@ export default function GameSnackPlay() {
 
     useEffect(() => {
         const preloadImage = () => {
-            const nextquiz = quiz[index + 1];
-            if (nextquiz) {
-                const img = new window.Image();
-                img.src = nextquiz.ImageUrl;
+            for (let i = 1; i <= 3; i++) {
+                const nextquiz = quiz[index + i];
+
+                if (nextquiz) {
+                    const img = new window.Image();
+                    img.src = nextquiz.ImageUrl;
+                }
             }
         }
         preloadImage();
@@ -132,16 +135,18 @@ export default function GameSnackPlay() {
                 {quiz[index] && (
                     <>
                         <div className={styles.timeBarWrap}>
-                            <div className={styles.timeBar} style={{ width: `${widthPct}%`,
-                                                                    backgroundColor : `${count >= 2 ? "#f43f5e" : count >= 1 ? "#facc15" : "#fef08a" }` }} />
+                            <div className={styles.timeBar} style={{
+                                width: `${widthPct}%`,
+                                backgroundColor: `${count >= 2 ? "#f43f5e" : count >= 1 ? "#facc15" : "#fef08a"}`
+                            }} />
                         </div>
                         {quiz[index]?.ImageUrl ? (
                             <div className={styles.ImageWrap}>
-                                <Image
+                                <img
                                     key={index}
                                     className={styles.PlayImage}
                                     src={quiz[index].ImageUrl}
-                                    alt='logo'
+                                    alt='quiz'
                                     width={400}
                                     height={500}
                                     priority
