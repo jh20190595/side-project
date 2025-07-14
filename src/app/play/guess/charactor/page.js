@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 import styles from './page.module.css';
 import chractorData from '@/lib/charactor';
-import Image from 'next/image';
 import RankAndSave from '@/lib/RankAndSave';
 import ResultPage from '@/component/Result';
 
