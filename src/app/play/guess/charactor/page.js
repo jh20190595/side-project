@@ -142,15 +142,13 @@ export default function GameSnackPlay() {
                         </div>
                         {quiz[index]?.ImageUrl ? (
                             <div className={styles.ImageWrap}>
-                                <Image
+                                <img
                                     key={index}
                                     className={styles.PlayImage}
                                     src={quiz[index].ImageUrl}
                                     alt='quiz'
                                     width={400}
                                     height={500}
-                                    priority
-                                    objectFit='cover'
                                 />
                             </div>
                         ) : null}

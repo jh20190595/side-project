@@ -3,7 +3,6 @@
 import { useState, useEffect, useCallback } from 'react';
 import styles from './page.module.css';
 import snackData from '@/lib/snackData';
-import Image from 'next/image';
 import RankAndSave from '@/lib/RankAndSave';
 import ResultPage from '@/component/Result';
 
@@ -117,13 +116,12 @@ export default function GameSnackPlay() {
                 {quiz[isCorrect] && (
                     <>
                         {quiz[isCorrect]?.ImageUrl ? (
-                            <Image
+                            <img
                                 className={`${styles.PlayImage} ${isActive ? styles.show : ''}`}
                                 src={quiz[isCorrect].ImageUrl}
                                 alt='logo'
                                 width={500}
                                 height={500}
-                                priority
                             />
                         ) : null}
                         {!isActive && (
